@@ -53,11 +53,17 @@ console.log(oddElements([1, 2, 3, 4, 5, 6, 7]))
 
 //Part C
 function factorial(n) {
+  //Factorial starts at 1
   let factorial = 1;
+  if (n == 0) {
+    return n;
+  }
+  //Loops through descends so it starts from the given number and then ends at 1
   for (let i = n; i >= 1; i--) {
     //multiplies 1 by i
     factorial *= i;
   }
+  //returns our factorial answer
   return factorial;
 }
 console.log("Factorial of n is " + factorial(4));
